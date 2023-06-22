@@ -3,5 +3,14 @@
 @tailwind utilities;
 
 body {
-    @apply bg-black text-slate-100
+    @apply bg-black text-slate-100;
+
+    overscroll-behavior: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
 }
